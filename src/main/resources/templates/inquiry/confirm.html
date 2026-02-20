@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>入力内容確認</title>
+</head>
+<body>
+<h1>入力内容確認</h1>
+<p>以下の内容で受け付けました（まだ保存はされていません）。</p>
+
+<ul>
+    <li>名前：<span th:text="${inquiryForm.name}"></span></li>
+    <li>メール：<span th:text="${inquiryForm.email}"></span></li>
+    <li>内容：<span th:text="${inquiryForm.content}"></span></li>
+</ul>
+
+<a th:href="@{/inquiry}">戻る</a>
+<a th:href="@{/}">トップへ戻る</a>
+</body>
+</html>
